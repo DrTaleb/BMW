@@ -1,0 +1,49 @@
+.bg-body- {
+    background-color: #f5f5fc;
+}
+
+.parent {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.w-95 {
+    width: 95%;
+}
+.bg-light-MyCss {
+    background-color: #dfe2e8;
+}
+/*main titles section ---------------------------------------------------------------*/
+.title-parent {
+    overflow: hidden;
+    position: relative;
+    opacity: 70%;
+    margin-top: 50px;
+}
+
+.main-title {
+    padding-left: 5px;
+    border-left: #0b5ed7 4px solid;
+    font-family: "Calisto MT", sans-serif;
+}
+
+.main-title::after {
+    content: "";
+    position: absolute;
+    opacity: 60%;
+    width: 100%;
+    height: 20px;
+    border-bottom: #000000 3px solid;
+    margin-left: 10px;
+}
+.table-div{
+    overflow-x : scroll;
+}
+.Massage-text{
+        transition: .2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.Massage-text:hover{
+            transition: .2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform: scale(1.05);
+
+}

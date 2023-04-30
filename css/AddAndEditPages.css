@@ -1,0 +1,212 @@
+.bg-body- {
+    background-color: #f5f5fc;
+}
+.parent {
+    overflow-x: hidden;
+    width: 100%;
+}
+.w-95 {
+    width: 95%;
+}
+.bg-light-MyCss {
+    background-color: #dfe2e8;
+}
+.form-control{
+    position: relative;
+}
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #0b5ed7 solid;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    color: #2c3034 ;
+    margin-top: 5px;
+    transform: translateY(0);
+       transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.form-control input:focus,
+.form-control input:valid{
+    outline: 0;
+    border-bottom-color: #0b5ed7;
+}
+.form-control label {
+    position: absolute;
+    pointer-events: none;
+}
+.form-control label span {
+    display: inline-block;
+    font-size: 14px;
+    min-width: 5px;
+    color: #2c3034;
+}
+.form-control input:focus ,
+.form-control input:valid{
+   transform: translateY(20px);
+   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    border: #0b5ed7 2px solid;
+    border-radius: 5px;
+}
+
+.form-control-list{
+    position: relative;
+}
+.form-control-list input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #0b5ed7 solid;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    color: #2c3034 ;
+    margin-top: 0px;
+    transform: translateY(0);
+       transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.form-control-list input:focus,
+.form-control input:valid{
+    outline: 0;
+    border-bottom-color: #0b5ed7;
+}
+
+.form-control-list input:focus ,
+.form-control-list input:valid{
+   transform: translateY(0px);
+   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    border: #0b5ed7 2px solid;
+    border-radius: 5px;
+}
+
+
+
+@media (max-width: 900px) {
+    .header-items {
+        top: 60%;
+        opacity: 90%;
+    }
+}
+
+.header-items:hover,
+.header-items:active {
+    opacity: 100%;
+    transform: scale(1.05);
+    transition: .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+}
+
+.header-title {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-left: #0a53be 3px solid;
+    padding-left: 10px;
+}
+
+/*navbar*/
+.main-navbar {
+    border-left: #0b5ed7 3px solid
+}
+
+.main-navbar-button {
+    opacity: 70%;
+}
+
+.main-navbar-button:hover {
+    opacity: 100%;
+}
+
+.bg-light-MyCss {
+    background-color: #dfe2e8;
+}
+
+.nav-item:hover {
+    background-color: #f7f8fa;
+}
+
+/*title*/
+.title {
+    clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 85% 100%, 100% 0%);
+    border-left: #0b5ed7 3px solid;
+    font-family: "Calisto MT", sans-serif;
+    padding: 10px 0;
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 0.7rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .title {
+        font-size: 1.5rem;
+    }
+}
+/*main titles section ---------------------------------------------------------------*/
+.title-parent {
+    overflow: hidden;
+    position: relative;
+}
+
+.main-title {
+    border-left: #0b5ed7 2px solid;
+    font-family: "Calisto MT", sans-serif;
+    opacity: 70%;
+}
+
+.main-title::after {
+    content: "";
+    position: absolute;
+    opacity: 60%;
+    width: 100%;
+    height: 20px;
+    border-bottom: #000000 1px solid;
+    margin-left: 10px;
+
+}
+
+.year-title {
+    font-family: sans-serif, "Calisto MT";
+}
+
+/*-------------------------------------------------------------------------------to this line the codes ore same in all pages*/
+/*models*/
+.model-div {
+    border: #0b5ed7 2px solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+/*history section-------------------------------*/
+.history-section {
+    overflow: hidden;
+}
+.text-area{
+    background: #f5f5fc;
+    border: #0b5ed7 2px solid;
+    width: 100%;
+    height: fit-content;
+}
+.text-area:focus{
+    border: #084298 2px solid;
+}
+.text-justify {
+    text-align: justify;
+}
+
+.box {
+    transform: translateX(1500px);
+    transition: transform 0.8s ease;
+}
+
+.box.show {
+    transform: translateX(0);
+}
+

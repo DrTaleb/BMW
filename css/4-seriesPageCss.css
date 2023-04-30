@@ -1,0 +1,205 @@
+.bg-body- {
+    background-color: #f5f5fc;
+}
+
+/*this is for parent div in line 49 in html it includes all he content of page*/
+.parent {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.w-95 {
+    width: 95%;
+}
+
+/*---------------------------------------------------------------------------------*/
+/* header */
+/*------------------ These are for background in top of the page*/
+.header {
+    background: url("/imgs/4-series-header-wallpaper.webp");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    width: 100%;
+    position: relative;
+}
+
+.header-img {
+    opacity: 0;
+    position: relative;
+}
+
+.header-items {
+    position: absolute;
+    top: 70%;
+    padding-left: 10px;
+}
+
+@media (max-width: 900px) {
+    .header-items {
+        top: 60%;
+        opacity: 90%;
+    }
+}
+
+.header-items:hover,
+.header-items:active {
+    opacity: 100%;
+    transform: scale(1.05);
+    transition: .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+}
+
+.header-title {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-left: #0a53be 3px solid;
+    padding-left: 10px;
+}
+
+/*navbar*/
+.main-navbar {
+    border-left: #0b5ed7 3px solid
+}
+
+.main-navbar-button {
+    opacity: 70%;
+}
+
+.main-navbar-button:hover {
+    opacity: 100%;
+}
+
+.bg-light-MyCss {
+    background-color: #dfe2e8;
+}
+
+.nav-item:hover {
+    background-color: #f7f8fa;
+}
+
+/*title*/
+.title {
+    clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 85% 100%, 100% 0%);
+    border-left: #0b5ed7 3px solid;
+    font-family: "Calisto MT", sans-serif;
+    padding: 10px 0;
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 0.7rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .title {
+        font-size: 1.5rem;
+    }
+}
+/*main titles section ---------------------------------------------------------------*/
+.title-parent {
+    overflow: hidden;
+    position: relative;
+}
+
+.main-title {
+    border-left: #0b5ed7 4px solid;
+    font-family: "Calisto MT", sans-serif;
+}
+
+.main-title::after {
+    content: "";
+    position: absolute;
+    opacity: 60%;
+    width: 100%;
+    height: 20px;
+    border-bottom: #000000 3px solid;
+    margin-left: 10px;
+
+}
+
+.year-title {
+    font-family: sans-serif, "Calisto MT";
+}
+
+/*-------------------------------------------------------------------------------to this line the codes ore same in all pages*/
+/*models*/
+.w-32 {
+    flex: 0 0 auto;
+    max-width: 90%;
+}
+
+@media (min-width: 1000px) {
+    .w-32 {
+        flex: 0 0 auto;
+        max-width: 32%;
+    }
+}
+
+
+.model-img {
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.model-img:hover,
+.model-img:active {
+    transform: scale(1.05);
+    transition: .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/*history section-------------------------------*/
+.history-section {
+    overflow: hidden;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.box {
+    transform: translateX(1500px);
+    transition: transform 0.8s ease;
+}
+
+.box.show {
+    transform: translateX(0);
+}/*gallery*/
+.four-series-main-gallery-title{
+    font-family: sans-serif , "Calisto MT";
+}
+.gallery-item{
+    background: aqua;
+    position: relative;
+    cursor: pointer;
+}
+.gallery-img-{
+    transition: all 1s ease-in-out;
+}
+.gallery-item:hover .gallery-img-{
+    opacity: 70%;
+}
+.gallery-item::after{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    outline: 0.2rem solid white;
+    outline-offset: -2rem;
+    transition: all 1s ease-in-out;
+    transform: scale(0);
+}
+.gallery-item:hover:after{
+    transform: scale(1);
+}

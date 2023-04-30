@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add & Edit Models</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fab.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/AddAndEditPages.css">
+</head>
+<body class="bg-body-">
+<!--main navbar-->
+<!--md and lg navbar-->
+<nav class="main-navbar navbar nav-fill nav-tabs navbar-light navbar-expand-sm bg-light-MyCss sticky-top shadow p-1">
+    <div class="container">
+        <!--    navbar brand    -->
+        <a href="#" class="main-navbar-brand navbar-brand bg-secondary text-light badge ">Control Panel</a>
+        <!--    end navbar brand    -->
+        <!--    navbar button    -->
+        <div class=" menu-icon d-block d-sm-none">
+            <i class="fas fa-bars"></i>
+        </div>
+        <!--    end navbar button-->
+        <!--    navbar items     -->
+        <div class="main-navbar-collapse collapse navbar-collapse navbar-nav d-sm-block d-none">
+            <div class="nav-item nav-item-1 nav-link dropdown-toggle-split d-flex flex-column">
+                <a href="#" class="text-decoration-none text-dark px-3">
+                    Home
+                </a>
+                <div class="my-dropdown-menu col-12 d-flex flex-column bg-light-MyCss">
+                    <a href="#" class="my-dropdown-item menu-1">Index page</a>
+                    <a href="#" class="my-dropdown-item menu-1">Your Account</a>
+                    <a href="#" class="my-dropdown-item menu-1">Massage inbox</a>
+                </div>
+            </div>
+            <div class="nav-item nav-item-2 nav-link dropdown-toggle-split d-flex flex-column">
+                <a href="#" class="text-decoration-none text-dark px-3">
+                    series
+                </a>
+                <div class="my-dropdown-menu col-12 d-flex flex-column bg-light-MyCss">
+                    <a href="#" class="my-dropdown-item menu-2">Add Series Pages</a>
+                    <a href="#" class="my-dropdown-item menu-2">Edit Series Pages</a>
+                    <a href="#" class="my-dropdown-item menu-2">Add Series Models</a>
+                    <a href="#" class="my-dropdown-item menu-2">Edit Series Models</a>
+                </div>
+            </div>
+            <div class="nav-item nav-item-3 nav-link dropdown-toggle-split d-flex flex-column">
+                <a href="#" class="text-decoration-none text-dark px-3">
+                    Wallpapers
+                </a>
+                <div class="my-dropdown-menu col-12 d-flex flex-column bg-light-MyCss">
+                    <a href="#" class="my-dropdown-item menu-3">Add Wallpapers</a>
+                    <a href="#" class="my-dropdown-item menu-3">Edit Wallpapers</a>
+                </div>
+            </div>
+            <div class="nav-item nav-item-4 nav-link dropdown-toggle-split d-flex flex-column">
+                <a href="#" class="text-decoration-none text-dark px-3">
+                    Blogs
+                </a>
+                <div class="my-dropdown-menu col-12 d-flex flex-column bg-light-MyCss">
+                    <a href="#" class="my-dropdown-item menu-4">Add Blogs</a>
+                    <a href="#" class="my-dropdown-item menu-4">Edit Blogs</a>
+                </div>
+            </div>
+        </div>
+        <!--end md and lg navbar-->
+        <!--sm navbar-->
+        <div class="d-sm-none navigation-menu-">
+            <a class="text-decoration-none" href="#">
+                <div class="nav-item-1-sm dropdown-toggle-split d-flex flex-column text-center">
+                    <a class="text-decoration-none text-dark fw-bold">
+                        Home
+                    </a>
+                    <div class="my-dropdown-menu-sm col-12 d-flex flex-column bg-light-MyCss">
+                        <a href="#" class="my-dropdown-item menu-1-sm">Index Page</a>
+                        <a href="#" class="my-dropdown-item menu-1-sm">Your Account</a>
+                    </div>
+                </div>
+            </a>
+            <a class="text-decoration-none text-center">
+                <div class="nav-item-2-sm dropdown-toggle-split d-flex flex-column text-center">
+                    <a class="text-decoration-none text-dark fw-bold">
+                        Edit series Pages
+                    </a>
+                    <div class="my-dropdown-menu-sm col-12 d-flex flex-column bg-light-MyCss">
+                        <a href="#" class="my-dropdown-item menu-2-sm">Add Series Pages</a>
+                        <a href="#" class="my-dropdown-item menu-2-sm">Edit Series Pages</a>
+                        <a href="#" class="my-dropdown-item menu-2-sm">Edit Series Models</a>
+                    </div>
+                </div>
+            </a>
+            <a class="text-decoration-none">
+                <div class="nav-item-3-sm dropdown-toggle-split d-flex flex-column text-center">
+                    <a class="text-decoration-none text-dark fw-bold">
+                        Wallpapers
+                    </a>
+                    <div class="my-dropdown-menu-sm col-12 d-flex flex-column bg-light-MyCss">
+                        <a href="#" class="my-dropdown-item menu-3-sm">Add Wallpapers</a>
+                        <a href="#" class="my-dropdown-item menu-3-sm">Edit Wallpaper</a>
+                    </div>
+                </div>
+            </a>
+            <a class="text-decoration-none">
+                <div class="nav-item-4-sm dropdown-toggle-split d-flex flex-column text-center">
+                    <a class="text-decoration-none text-dark fw-bold">
+                        Blogs
+                    </a>
+                    <div class="my-dropdown-menu-sm col-12 d-flex flex-column bg-light-MyCss">
+                        <a href="#" class="my-dropdown-item menu-4-sm">Add Blogs</a>
+                        <a href="#" class="my-dropdown-item menu-4-sm">Edit Blogs</a>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--end sm navbar-->
+    </div>
+    <!--    end navbar items   -->
+</nav>
+<!--end main navbar-->
+<!--main content -->
+<div class="parent d-flex flex-column">
+    <form>
+        <!--main input section-->
+        <div class="row mb-sm-2">
+            <div class="title text-capitalize d-inline-block bg-light-MyCss pb-md-2 pe-5 me-0 col-9 col-lg-5 ps-lg-3 ps-1 d-flex flex-row gap-1">
+                <!--        number of series input-->
+                <div class=" bg-light-MyCss border-0 col-7 mt-0">
+                    <select class="form-select bg-light-MyCss" name="Series" id="Series" title="Series">
+                        <option value="1">The 1 series</option>
+                        <option value="2">The 2 series</option>
+                        <option value="3">The 3 series</option>
+                        <option value="4">The 4 series</option>
+                        <option value="5">The 5 series</option>
+                        <option value="6">The 6 series</option>
+                        <option value="7">The 7 series</option>
+                        <option value="8">The 8 series</option>
+                        <option value="X">The X series</option>
+                        <option value="Z">The z series</option>
+                    </select>
+                </div>
+                <!--        end number of series input-->
+                <!--        nth generation input-->
+                <div class=" bg-light-MyCss border-0 col-4 mt-0">
+                    <select class="form-select bg-light-MyCss" name="Generation" id="Generation" title="Generation">
+                        <option value="1">1st gen</option>
+                        <option value="2">2nd gen</option>
+                        <option value="3">3rd gen</option>
+                        <option value="4">4th gen</option>
+                        <option value="5">5th gen</option>
+                        <option value="6">6th gen</option>
+                        <option value="7">7th gen</option>
+                        <option value="8">8th gen</option>
+                        <option value="9">9th gen</option>
+                        <option value="10">10th gen</option>
+                    </select>
+                </div>
+                <!--        end nth generation input-->
+            </div>
+        </div>
+        <!--main input section-->
+        <!--model img & Year & Name title-->
+        <div class="title-parent w-100">
+            <h2 class="main-title header-title my-3">
+                Model section input
+            </h2>
+        </div>
+        <!--end model img & Year & Name title-->
+        <!--main models div    -->
+        <div class="main-models-div d-flex flex-column flex-md-row flex-wrap justify-content-around align-items-center flex-wrap gap-3 mt-md-1 mt-4">
+            <div class="model-div col-lg-3 col-md-5 col-10 box">
+                <div class="model-title">
+                    <!--model year input-->
+                    <div class="form-control bg-body- border-0 w-100 mt-0">
+                        <label class="form-label" for="ModelYear">
+                            Model Year
+                        </label>
+                        <input type="text" required name="ModelYear" id="ModelYear" title="ModelYear">
+                    </div>
+                    <!--end model year input-->
+                </div>
+                <div class="model-cap my-3">
+                    <!--model Name input-->
+                    <div class="form-control bg-body- border-0 w-100  mt-0">
+                        <label class="form-label" for="ModelName">
+                            Model Name
+                        </label>
+                        <input type="text" required name="ModelName" id="ModelName" title="ModelName">
+                    </div>
+                    <!--end model Name input-->
+                </div>
+                <!--model img input-->
+                <div class="d-flex flex-column justify-content-center mt-4">
+                    <input type="file" class="btn bg-light-MyCss" name="ModelImg" id="ModelImg" title="ModelImg">
+                </div>
+                <!--end model img input-->
+            </div>
+        </div>
+        <!--end main models div    -->
+        <!--history section main title-->
+        <div class="title-parent w-100">
+            <h2 class="main-title header-title my-3">
+                History section input
+            </h2>
+        </div>
+        <!--end history section main title-->
+        <!--history section-->
+        <div class="container">
+            <!--section 1        -->
+            <div class="history-section d-flex flex-column flex-wrap w-100">
+                <div class="inner-history-div d-flex flex-column flex-md-row mt-3 flex-wrap">
+                    <div class="col-md-12 col-12 order-0 order-md-0 box">
+                        <h3 class="year-title header-title ps-1 col-md-3 pb-3">
+                            <div>
+                                <!--first history title input-->
+                                <div class="form-control bg-body- border-0 mt-0">
+                                    <label class="form-label" for="FirstHistoryTitle">
+                                        first history Title
+                                    </label>
+                                    <input type="text"  name="FirstHistoryTitle" id="FirstHistoryTitle" title="FirstHistoryTitle">
+                                </div>
+                                <!--end first history title input-->
+                            </div>
+                        </h3>
+                    </div>
+                    <div class="col-md-5 col-12 order-2 order-md-1 box">
+                        <h3 class="lead mt-4">Enter text here</h3>
+                        <!--first discription input-->
+                        <textarea class="text-area" name="FirstDiscription" id="FirstDiscription" title="FirstDiscription"></textarea>
+                        <!--end first discription input-->
+                        <div class="table-1">
+                            <table class="table history-table table-bordered table-responsive table-striped table-hover"
+                                   id="history-table">
+                                <tr>
+                                    <td>Production period</td>
+                                    <td>
+                                        <div>
+                                            <!--production period input  -->
+                                            <div class="form-control-list border-0 mt-0">
+                                                <input type="text" required name="ProductionPeriod" id="ProductionPeriod" title="ProductionPeriod">
+                                            </div>
+                                            <!--end production period input  -->
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Length</td>
+                                    <td>
+                                        <div>
+                                            <!--length input-->
+                                            <div class="form-control-list border-0 mt-0">
+                                                <input type="text" required name="Length" id="Length" title="Length">
+                                            </div>
+                                            <!--end length input-->
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Width</td>
+                                    <td>
+                                        <div>
+                                            <!--width input-->
+                                            <div class="form-control-list border-0 mt-0">
+                                                <input type="text" required name="Width" id="Width" title="Width">
+                                            </div>
+                                            <!--end width input-->
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Height</td>
+                                    <td>
+                                        <div>
+                                            <!--height input-->
+                                            <div class="form-control-list border-0 mt-0">
+                                                <input type="text" required name="Height" id="Height" title="Height">
+                                            </div>
+                                            <!--end height input-->
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-6 offset-md-1 col-12 order-1 order-md-2 box">
+                        <h3 class="lead mt-4">Chosen photo will be placed here</h3>
+                        <!--history section first img input-->
+                        <input type="file" class="btn bg-light-MyCss col-11 mt-2" name="HistorySectionFirstImg" id="HistorySectionFirstImg" title="HistorySectionFirstImg">
+                        <!--end history section first img input-->
+                    </div>
+                </div>
+                <!--end section 1            -->
+                <!--addition section 1 -->
+                <div class="addition-1 mt-4">
+                    <div class="inner-history-div d-flex flex-column flex-md-row flex-wrap">
+                        <div class="col-md-5 order-1 order-md-1 box">
+                            <h3 class="lead mt-4">Chosen photo will be placed here</h3>
+                            <!--history section second img input-->
+                            <input type="file" class="btn bg-light-MyCss col-11 mt-2" name="HistorySectionSecondImg" id="HistorySectionSecondImg" title="HistorySectionSecondImg">
+                            <!--end history section second img input-->
+                        </div>
+                        <div class="col-md-12 col-12 order-0 order-md-0 box offset-md-6">
+                            <h3 class="year-title header-title ps-1 col-md-3 mt-3">
+                                <div>
+                                    <!--second history title section                                -->
+                                    <div class="form-control bg-body- border-0 mt-0">
+                                        <label class="form-label" for="SecondHistoryTitle">
+                                            second history Title
+                                        </label>
+                                        <input type="text" name="SecondHistoryTitle" id="SecondHistoryTitle" title="SecondHistoryTitle">
+                                    </div>
+                                    <!--second history title section                                -->
+                                </div>
+                            </h3>
+                        </div>
+                        <div class="col-md-6 offset-md-1 order-2 order-md-2 box">
+                            <h3 class="lead mt-4">Enter text here</h3>
+                            <!--second discription input-->
+                            <textarea class="text-area" name="SecondDiscription" id="SecondDiscription" title="SecondDiscription"></textarea>
+                            <!--end second discription input-->
+                            <div class="table-2"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--end addition section 1-->
+                <!--addition section 2-->
+                <div class="addition-2">
+                    <div class="inner-history-div d-flex flex-column flex-md-row mt-3 flex-wrap">
+                        <div class="col-md-12 col-12 order-0 order-md-0 box">
+                            <h3 class="year-title header-title ps-1 col-md-3 pb-3">
+                                <div>
+                                    <!--third history title input-->
+                                    <div class="form-control bg-body- border-0 mt-0">
+                                        <label class="form-label" for="ThirdHistoryTitle">
+                                            Third history title
+                                        </label>
+                                        <input type="text" name="ThirdHistoryTitle" id="ThirdHistoryTitle" title="ThirdHistoryTitle">
+                                    </div>
+                                    <!--end third history title input-->
+                                </div>
+                            </h3>
+                        </div>
+                        <div class="col-md-5 col-12 order-2 order-md-1 box">
+                            <h3 class="lead mt-4">Enter text here</h3>
+                            <!--third discription input-->
+                            <textarea class="text-area" name="ThirdDiscription" id="ThirdDiscription" title="ThirdDiscription"></textarea>
+                            <!--end third discription input-->
+                            <div class="table-3"></div>
+                        </div>
+                        <div class="col-md-6 offset-md-1 col-12 order-1 order-md-2 box">
+                            <h3 class="lead mt-4">Chosen photo will be placed here</h3>
+                            <!--history section third img input-->
+                            <input type="file" class="btn bg-light-MyCss col-11 mt-2" name="HistorySectionThirdImg" id="HistorySectionThirdImg" title="HistorySectionThirdImg">
+                            <!--end history section third img input-->
+                        </div>
+                    </div>
+                </div>
+                <!--end second addition section            -->
+                <!--addition sections control btns -->
+                <div class="col-7 d-flex flex-column justify-content-center">
+                    <a class="btn btn-outline-secondary col-12 add-section">Add Section</a>
+                    <a class="btn btn-outline-danger col-12 delete-section my-2">Delete Section</a>
+                    <a class="btn btn-outline-secondary col-12 add-section-2 my-2">Add Section</a>
+                    <a class="btn btn-outline-danger col-12 delete-section-2">Delete Section</a>
+                </div>
+                <!--addition sections control btns -->
+            </div>
+            <div class="button-parent w-100 d-flex flex-row justify-content-center my-5">
+                <!--submit btn-->
+                <button type="submit" class="col-4 main-button btn btn-success">
+                    Submit
+                </button>
+                <!--submit btn-->
+            </div>
+        </div>
+    </form>
+</div>
+<script rel="script" src="js/bootstrap.js"></script>
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>-->
+<script src="js/jquery-3.6.1.min.js"></script>
+<script rel="script" src="js/nav.js"></script>
+<script src="js/scroll-animation.js"></script>
+<script src="js/BmwSeriesAddBlogs.js"></script>
+</body>
+</html>

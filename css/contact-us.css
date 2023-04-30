@@ -1,0 +1,146 @@
+.bg-body- {
+    background-color: #f5f5fc;
+}
+
+/*this is for parent div in line 49 in html it includes all he content of page*/
+.parent {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.w-95 {
+    width: 95%;
+}
+.bg-light-MyCss {
+    background-color: #dfe2e8;
+}
+/*---------------------------------------------------------------------------------*/
+/* header */
+/*------------------ These are for background in top of the page*/
+.header {
+    background: url("/imgs/main-page-header-lg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    width: 100%;
+    position: relative;
+}
+
+.header-img {
+    opacity: 0;
+    position: relative;
+}
+
+.header-items {
+    position: absolute;
+    top: 70%;
+    padding-left: 10px;
+}
+
+@media (max-width: 900px) {
+    .header-items {
+        top: 60%;
+        opacity: 90%;
+    }
+}
+
+.header-items:hover,
+.header-items:active {
+    opacity: 100%;
+    transform: scale(1.05);
+    transition: .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+}
+
+.header-title {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-left: #0a53be 3px solid;
+    padding-left: 10px;
+}
+
+
+
+/*title*/
+.title {
+    clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 85% 100%, 100% 0%);
+    border-left: #0b5ed7 3px solid;
+    font-family: "Calisto MT", sans-serif;
+    padding: 10px 0;
+}
+/*main titles section ---------------------------------------------------------------*/
+.title-parent {
+    overflow: hidden;
+    position: relative;
+}
+
+.main-title {
+    padding-left: 5px;
+    border-left: #0b5ed7 4px solid;
+    font-family: "Calisto MT", sans-serif;
+}
+
+.main-title::after {
+    content: "";
+    position: absolute;
+    opacity: 60%;
+    width: 100%;
+    height: 20px;
+    border-bottom: #000000 3px solid;
+    margin-left: 10px;
+
+}
+/*year title*/
+.year-title {
+    font-family: sans-serif, "Calisto MT";
+
+}
+.form-control{
+    position: relative;
+}
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #0b5ed7 solid;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    color: #2c3034 ;
+    margin-top: 7px;
+    transform: translateY(0);
+       transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.form-control input:focus,
+.form-control input:valid{
+    outline: 0;
+    border-bottom-color: #0b5ed7;
+}
+.form-control label {
+    position: absolute;
+    pointer-events: none;
+}
+.form-control label span {
+    display: inline-block;
+    font-size: 14px;
+    min-width: 5px;
+    color: #2c3034;
+}
+.form-control input:focus ,
+.form-control input:valid{
+   transform: translateY(20px);
+   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    border: #0b5ed7 2px solid;
+    border-radius: 5px;
+}
+.text-area{
+    border: #0b5ed7 2px solid;
+    height: 160px;
+}
+textarea:focus{
+    border: #0b5ed7 3px solid;
+    font-family: sans-serif, "Calisto MT";
+}
+.border-blue{
+    border-top:  #0b5ed7 2px solid;
+}
